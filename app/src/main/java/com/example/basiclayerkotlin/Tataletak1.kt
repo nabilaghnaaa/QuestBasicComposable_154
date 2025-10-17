@@ -110,11 +110,11 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
         Box(
             modifier = modifier
                 .fillMaxWidth()
-                .height(height = 110.dp)
-                .background(color = Color.Red),
+                .height(110.dp)
+                .background(color = Color(0xFFFFC1CC)), // 🎀 Baby Pink
             contentAlignment = Alignment.Center
         ) {
-            Column() {
+            Column {
                 Row(
                     modifier = modifier.fillMaxWidth(),
                     horizontalArrangement = Arrangement.SpaceEvenly
@@ -135,12 +135,13 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
             }
         }
 
-        Spacer(modifier = Modifier.height(height = 10.dp))
+        Spacer(modifier = Modifier.height(10.dp))
+
         Box(
             modifier = modifier
                 .fillMaxWidth()
-                .height(height = 300.dp)
-                .background(color = Color.Blue),
+                .height(300.dp)
+                .background(color = Color(0xFFB3E5FC)), // 💙 Baby Blue
             contentAlignment = Alignment.Center
         ) {
             Image(
@@ -151,12 +152,10 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
             Text(
                 text = "My Music",
                 fontSize = 50.sp,
-                color = Color.Red,
+                color = Color(0xFFFFC1CC), // teks baby pink
                 fontWeight = FontWeight.Bold,
                 fontFamily = FontFamily.Cursive,
-                modifier = Modifier.align(
-                    alignment = Alignment.Center
-                )
+                modifier = Modifier.align(Alignment.Center)
             )
         }
     }
